@@ -1,4 +1,4 @@
-# make-iframe
+# create-iframe
 
 Easily create an iframe with arbitrary javascript.
 
@@ -7,10 +7,10 @@ Extracted from [browser-module-sandbox](https://github.com/maxogden/browser-modu
 ## Usage
 
 ```js
-var makeIframe = require('make-iframe')
+var createIframe = require('create-iframe')
 
 var code = 'console.log(\'hello\')'
-var iframe = makeIframe(code, { container: document.body })
+var iframe = createIframe(code, { container: document.body })
 ```
 
 ## License

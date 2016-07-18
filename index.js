@@ -4,7 +4,7 @@ var iframe = require('iframe')
 // Originally from browser-module-sandbox
 // https://github.com/maxogden/browser-module-sandbox/blob/master/index.js#L145
 
-module.exports = function makeIframe (script, options) {
+module.exports = function createIframe (script, options) {
   assert(options.container, 'options.container is required')
   script = script || ''
 
