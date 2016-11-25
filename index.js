@@ -21,7 +21,7 @@ module.exports = function createIframe (script, options) {
   var scriptTag = script.indexOf('</script>') === -1 ? (
       '<script type="text/javascript">' + script + '</script>'
   ) : (
-      '<script type="text/javascript" src="data:text/javascript;charset=UTF-8,'+ encodeURIComponent(script) + '"></script>'
+      '<script type="text/javascript" src="data:text/javascript;charset=UTF-8,' + encodeURIComponent(script) + '"></script>'
   )
 
   function render (newscript) {
@@ -36,7 +36,6 @@ module.exports = function createIframe (script, options) {
 
   frame.setHTML(render(script))
   frame.render = function (newscript) {
-    console.log('render', newscript)
     frame.setHTML(render(newscript))
   }
 
