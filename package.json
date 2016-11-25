@@ -1,6 +1,6 @@
 {
   "name": "create-iframe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "programmatically create an iframe that can execute javascript",
   "main": "index.js",
   "scripts": {
